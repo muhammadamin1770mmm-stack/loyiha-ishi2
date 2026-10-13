@@ -21,8 +21,8 @@ header{
 }
 .head{
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 }
 .navi{
     display: flex;
@@ -33,6 +33,13 @@ header{
     background-color: #2D2641;
     padding-top: 60px;
     padding-bottom: 100px;
+}
+.pi{
+   color: #837D88;
+    transition: all 0.5s;
+}
+.pi:hover{
+color: black;
 }
 .btn2{
     width: 146px;
@@ -106,6 +113,9 @@ color: white;
 .yozuv{
     font-size: 72px;
 }
+.yozuv2{
+    font-size: 48px;
+}
 .navia{
     display: flex;
     gap: 20px;
@@ -140,14 +150,47 @@ color: white;
 
 
 
+@media(max-width:1020px) {
+    .sec1{
+        flex-direction: column-reverse;
+    }
+    .rasm{
+        position:static;
+    }
+}
+@media(max-width:715px) {
+    .div69{
+flex-wrap: wrap;
+    }
+    .div67{
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media(max-width:500px){
+      .rasmcha{
+    display: flex;
+   }
+    .navi{
+        display: none;
+    }
+    .head{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+  
+}
 
-
-@media( max-width:375px) {
+@media( max-width:380px) {
     .rasm{
         position: static;
     }
    .rasmcha{
-    display: flex;
+    display: block;
    }
     .sec1{
         display: flex;
@@ -166,14 +209,15 @@ color: white;
     .head{
         display: flex;
         align-items: center;
-        justify-content: space-around;
-        gap: 100px;
-        margin-left: 40px;
+        justify-content: space-between;
     }
-    .yozuv{
-        font-size: 48px;
-        text-align: center;
-    }
+   .div1 h1{
+    font-size: 36px;
+    font-weight: 400;
+   }
+   .yozuv{
+    font-size: 48px;
+   }
     .div69{
         display: flex;
         flex-direction: column;
@@ -199,5 +243,9 @@ color: white;
         flex-direction: column;
         gap: 30px;
         text-align:center ;
+    }
+    .yozuv2{
+        font-size: 36px;
+        text-align: center;
     }
 }
